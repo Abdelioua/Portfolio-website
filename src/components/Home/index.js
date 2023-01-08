@@ -7,7 +7,7 @@ import Logo from "./Logo";
 import Loader from "react-loaders";
 const Home = () => {
   const [charClass, setCharClass] = useState("text-animate");
-  const infoArr = ["b", "d", "e", "r", "r", "a", "h", "m", "a", "n", "e"];
+  const infoArr = ["b", "d", "e", "r", "r", "a", "h", "m", "a", "n", "e", ","];
   const jobArr = [
     "W",
     "e",
@@ -34,7 +34,7 @@ const Home = () => {
         <div className="text-zone">
           <h1>
             <span className={charClass}>H</span>
-            <span className={`${charClass} _12`}>i</span>
+            <span className={`${charClass} _12`}>i,</span>
             <br />
             <span className={`${charClass} _13`}>I</span>
             <span className={`${charClass} _14`}>'m</span>
@@ -43,7 +43,7 @@ const Home = () => {
             <br />
             <AnimatedText charClass={charClass} strArr={jobArr} idx={26} />
           </h1>
-          <h2>Frontend developer | Javascript Expert | Backend developer</h2>
+          <h2>Full-Stack Web Developer | MERN Stack | Express.js </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>

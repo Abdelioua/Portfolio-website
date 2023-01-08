@@ -30,7 +30,6 @@ const Portfolio = () => {
 
       .catch((err) => console.log(err));
   }, []);
-  console.log(projectArr);
 
   if (Error) return <div className="error">Error: failed to fetch api!</div>;
   return (

@@ -30,7 +30,7 @@
     img {
       background-color: #444;
       border-radius: 8px;
-      width: 32px;
+      width: 35px;
       margin-left: 20px;
       opacity: 0;
       height: auto;
@@ -76,6 +76,8 @@
       padding: 20px;
       box-sizing: border-box;
       h1 {
+        font-size: 39px;
+
         &::before {
           display: none;
         }
