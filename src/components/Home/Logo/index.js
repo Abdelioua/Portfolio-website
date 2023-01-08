@@ -3,7 +3,6 @@ import LogoS from "../../../assets/images/ao.png";
 import LogoOutlined from "../../../assets/images/a.png";
 import { useEffect, useRef } from "react";
 import gsap from "gsap-trial";
-import DrawSVGPlugin from "gsap-trial/DrawSVGPlugin";
 
 const Logo = () => {
   const bgRef = useRef();
@@ -11,8 +10,6 @@ const Logo = () => {
   const outlineRef = useRef();
 
   useEffect(() => {
-    gsap.registerPlugin(DrawSVGPlugin);
-
     gsap
       .timeline()
       .to(bgRef.current, {
