@@ -1,0 +1,67 @@
+.projects {
+  padding: 25px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  margin-bottom: 50px;
+
+  .project-box {
+    background-size: cover;
+    background-position: 50%;
+    height: 200px;
+    border-radius: 8px;
+    position: relative;
+    background-color: white;
+    animation: bounceIn 1s 1s forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px 0px;
+    position: relative;
+    &:hover {
+      animation: pulse 1s both;
+      .content {
+        bottom: 0;
+      }
+    }
+    .content {
+      position: absolute;
+      bottom: -60px;
+      width: 100%;
+      padding: 0 10px;
+      transition: ease-out 0.5s;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0,
+        rgba(0, 0, 0, 1)
+      );
+      .text {
+        font-family: "Coolvetica";
+        color: white;
+        padding: 5px;
+        letter-spacing: 2px;
+        align-self: flex-start;
+      }
+
+      svg {
+        font-size: 35px;
+        margin: 0 auto;
+        color: #fff;
+
+        &:hover {
+          color: #eee;
+          animation: pulse 1s both;
+        }
+      }
+      .icons {
+        display: flex;
+        padding: 10px 0;
+        gap: 5px;
+      }
+    }
+  }
+}

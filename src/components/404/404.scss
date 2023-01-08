@@ -1,0 +1,24 @@
+.does-not-exist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    color: #ffd700;
+    animation: headShake 1s 1s forwards;
+  }
+  a {
+    color: #ffd700;
+    padding: 10px 25px;
+    border: #ffd700 solid 1px;
+    font-size: large;
+    text-decoration: none;
+    border-radius: 8px;
+    // animation: flip 1s 1s forwards;
+
+    &:hover {
+      background-color: #ffd700;
+      color: #fff;
+    }
+  }
+}

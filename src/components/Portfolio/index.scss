@@ -1,0 +1,37 @@
+.portfolio-page {
+  padding-left: 100px;
+  padding-right: 50px;
+  height: 100%;
+  overflow: auto;
+
+  h1.page-title {
+    margin: 50px 0 0 100px;
+    animation: backInLeft 1s 1s forwards;
+  }
+}
+.error {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: red;
+  text-align: center;
+  font-size: 24px;
+
+  animation: shakeX 1s forwards;
+}
+
+@media screen and (max-width: 976px) {
+  .portfolio-page {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: visible;
+    padding: 20px;
+
+    h1.page-title {
+      margin: 100px 0 0 0;
+      animation: backInLeft 1s 1s forwards;
+    }
+  }
+}

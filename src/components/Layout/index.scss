@@ -1,0 +1,126 @@
+.page {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.container {
+  width: 100%;
+  will-change: contents;
+  height: 90%;
+  min-height: 566px;
+  position: absolute;
+  opacity: 0;
+  top: 5%;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1000ms forwards;
+  animation-delay: 1000ms;
+}
+
+.about-page,
+.contact-page,
+.portfolio-page {
+  h1 {
+    font-size: 53px;
+    font-family: "Coolvetica";
+    color: #444;
+    font-weight: 400;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px;
+    left: 10px;
+
+    &::before {
+      content: "<h1>";
+      position: absolute;
+      left: 0;
+      top: -25px;
+      color: #e1b4ff;
+      font-size: 25px;
+      font-family: "La Belle Aurore";
+      color: #e1b4ff;
+      opacity: 0.6;
+      margin-right: 20px;
+    }
+
+    &::after {
+      content: "<h1>";
+      position: absolute;
+      left: 0;
+      bottom: -25px;
+      color: #fff;
+      font-size: 25px;
+      font-family: "La Belle Aurore";
+      color: #e1b4ff;
+      opacity: 0.6;
+      animation: fadeIn 1000ms 1700ms backwards;
+    }
+  }
+  p {
+    font-size: 13px;
+    color: #444;
+    font-weight: 300;
+    font-family: sans-serif;
+    min-width: fit-content;
+    animation: pulse 1000ms;
+
+    &:nth-of-type(1) {
+      animation-delay: 1100ms;
+    }
+    &:nth-of-type(2) {
+      animation-delay: 1200ms;
+    }
+    &:nth-of-type(3) {
+      animation-delay: 1300ms;
+    }
+  }
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+    animation: backInLeft 0.5s 1s backwards;
+  }
+
+  .text-animate-hover {
+    &:hover {
+      color: #e1b4ff;
+    }
+  }
+}
+
+@media screen and (max-width: 976px) {
+  .container {
+    position: initial;
+    height: auto;
+    min-height: auto;
+    box-sizing: border-box;
+    width: 100% !important;
+  }
+  .page {
+    position: initial;
+    height: auto;
+    min-height: auto;
+    box-sizing: border-box;
+  }
+
+  .about-page,
+  .contact-page,
+  .portfolio-page {
+    .text-zone {
+      position: initial;
+      transform: none;
+      width: 100%;
+      display: block;
+      padding: 20px;
+      margin-top: 15%;
+      box-sizing: border-box;
+    }
+  }
+}

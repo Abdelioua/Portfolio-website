@@ -1,0 +1,118 @@
+.contact-form {
+  width: 100%;
+  margin-top: 40px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    li {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      opacity: 0;
+      overflow: hidden;
+      display: inline-block;
+      animation: fadeInUp 1s 1.2s;
+      animation-fill-mode: forwards;
+    }
+
+    li.half {
+      flex-basis: 49%;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    border: 0;
+    background: #fff;
+    height: 50px;
+    font-size: 16px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-bottom: 1px #e1b4ff solid;
+    outline: none;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #333;
+  }
+  textarea {
+    width: 100%;
+    border: 0;
+    background: #fff;
+    border-bottom: 1px #e1b4ff solid;
+    outline: none;
+    height: 50px;
+    font-size: 16px;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 150px;
+  }
+
+  .flat-button {
+    color: #333;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #e1b4ff;
+    font-weight: bold;
+    border-radius: 4px;
+    background: 0 0;
+    text-transform: uppercase;
+    margin-left: auto;
+    cursor: pointer;
+    &:hover {
+      background-color: #e1b4ff;
+      color: #fff;
+    }
+  }
+}
+
+.map-zone {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 15px;
+  top: 0;
+  background-color: #e1b4ff;
+}
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation: backInRight 1000ms 1200ms forwards;
+}
+.info {
+  background-color: black;
+  position: absolute;
+  top: 9%;
+  right: 30%;
+  color: #fff;
+  padding: 20px;
+  font-size: 23px;
+  z-index: 555;
+  animation: backInDown 1000ms 1200ms both;
+}
+
+@media screen and (max-width: 976px) {
+  .map-zone {
+    position: initial;
+    width: 100%;
+    height: 200px;
+  }
+}
+.info {
+  display: none;
+}

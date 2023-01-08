@@ -1,0 +1,93 @@
+.home-page {
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+  }
+  h1 {
+    color: #444;
+    font-size: 53px;
+    margin: 0;
+    font-family: "Coolvetica";
+    font-weight: 400;
+
+    &::before {
+      content: "<h1>";
+      color: #e1b4ff;
+      font-family: "La Belle Aurore";
+      opacity: 0.6;
+    }
+    &::after {
+      content: "</h1>";
+      color: #e1b4ff;
+      font-family: "La Belle Aurore";
+      opacity: 0.6;
+      animation: fadeIn 1000ms 1700ms backwards;
+    }
+    img {
+      background-color: #444;
+      border-radius: 8px;
+      width: 32px;
+      margin-left: 20px;
+      opacity: 0;
+      height: auto;
+      animation: rotateIn 1000ms 1400ms linear both;
+    }
+  }
+
+  h2 {
+    color: #444;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    animation: bounceIn 1000ms 1400ms linear both;
+  }
+
+  .flat-button {
+    color: #e1b4ff;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #e1b4ff;
+    font-weight: bold;
+    white-space: nowrap;
+    animation: fadeIn 1000ms 1400ms backwards;
+
+    &:hover {
+      background-color: #e1b4ff;
+      color: #333;
+    }
+  }
+}
+
+@media (max-width: 976px) {
+  .home-page {
+    position: initial;
+    width: 100%;
+    .text-zone {
+      position: initial;
+      width: 100%;
+      transform: none;
+      padding: 20px;
+      box-sizing: border-box;
+      h1 {
+        &::before {
+          display: none;
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  .flat-button {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 150px;
+  }
+}
