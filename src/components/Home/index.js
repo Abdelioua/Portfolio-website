@@ -5,7 +5,7 @@ import LogoTitle from "../../assets/images/ao.png";
 import AnimatedText from "../AnitmatedText";
 import Logo from "./Logo";
 import Loader from "react-loaders";
-import resume from "../../assets/files/Abderrahmane-Abdelioua.pdf";
+import resume from "../../assets/files/Abderrahmane_Abdelioua_Resume.pdf";
 
 const Home = () => {
   const [charClass, setCharClass] = useState("text-animate");
