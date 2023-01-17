@@ -5,7 +5,7 @@ import LogoTitle from "../../assets/images/ao.png";
 import AnimatedText from "../AnitmatedText";
 import Logo from "./Logo";
 import Loader from "react-loaders";
-import resume from "../../assets/files/Abderrahmane_Abdelioua_Resume.pdf";
+import resume from "../../assets/files/Abderrahmane_Abdelioua_CV.pdf";
 
 const Home = () => {
   const [charClass, setCharClass] = useState("text-animate");
@@ -51,7 +51,7 @@ const Home = () => {
               CONTACT ME
             </Link>
             <Link to={resume} download target="_blank">
-              Download Resume
+              Download CV
             </Link>
           </div>
         </div>
