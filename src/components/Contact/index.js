@@ -85,15 +85,15 @@ const Contact = () => {
           </div>
         </div>
         <div className="map-zone">
-          <MapContainer center={[21.42251, 39.826168]} zoom={13}>
+          <MapContainer center={[48.094, 7.961]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[21.42251, 39.826168]}>
-              <Popup>Abderrahmane Lives Here!</Popup>
+            <Marker position={[48.094, 7.961]}>
+              <Popup>Waldkirch, Germany</Popup>
             </Marker>
           </MapContainer>
         </div>
         <div className="info">
-          Abderrahmane Abdelioua, <br /> Saudi Arabia <br /> Makkah, 24245{" "}
+          Abderrahmane Abdelioua, <br /> Waldkirch, Germany
           <br /> Abderrahmane.abdelioua@gmail.com
         </div>
       </div>
